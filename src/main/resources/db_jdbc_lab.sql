@@ -110,7 +110,7 @@ ALTER TABLE tour
 
 CREATE TABLE tourist_destination (
   id_tourist_destination INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
-  travel_date DATETIME NOT NULL,
+  travel_date VARCHAR(100) NOT NULL,
   id_tourist INT NOT NULL,
   id_hotel INT NULL,
   id_tour INT NULL,
@@ -144,7 +144,7 @@ CREATE TABLE guide(
 
 CREATE TABLE start_next_arrival (
   id_start_next_arrival INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
-  start_next_arrival_date DATETIME NOT NULL,
+  start_next_arrival_date VARCHAR(100) NOT NULL,
   id_tour INT NOT NULL,
   CONSTRAINT fk_start_next_arrival_tour
     FOREIGN KEY (id_tour)

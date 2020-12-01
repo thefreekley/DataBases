@@ -5,7 +5,6 @@ import ua.iot.tfk.model.annotation.Column;
 import ua.iot.tfk.model.annotation.PrimaryKey;
 import ua.iot.tfk.model.annotation.Table;
 
-import java.sql.Timestamp;
 
 
 @Table(name = "guide")
@@ -18,7 +17,7 @@ public class Guide {
     private String guideName;
 
     @Column(name = "guide_date_work")
-    private Timestamp guideDateWork;
+    private String guideDateWork;
 
     @Column(name = "guide_num_phone")
     private String guideNumPhone;
@@ -26,11 +25,11 @@ public class Guide {
     public Guide() {
     }
 
-    public Guide(String guideName,Timestamp guideDateWork,String guideNumPhone  ){
+    public Guide(String guideName,String guideDateWork,String guideNumPhone  ){
         this(-1, guideName,guideDateWork,guideNumPhone);
     }
 
-    public Guide(Integer idGuide, String guideName,Timestamp guideDateWork,String guideNumPhone) {
+    public Guide(Integer idGuide, String guideName,String guideDateWork,String guideNumPhone) {
         this.idGuide = idGuide;
         this.guideName = guideName;
         this.guideDateWork=guideDateWork;
@@ -53,11 +52,11 @@ public class Guide {
         this.guideName = guideName;
     }
 
-    public Timestamp getGuideDateWork() {
+    public String getGuideDateWork() {
         return guideDateWork;
     }
 
-    public void setGuideDateWork(Timestamp guideDateWork) {
+    public void setGuideDateWork(String guideDateWork) {
         this.guideDateWork = guideDateWork;
     }
 

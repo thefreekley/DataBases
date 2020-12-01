@@ -13,26 +13,26 @@ public class TouristDestination {
     @Column(name = "id_tourist_destination")
     private Integer idTouristDestination;
 
-    @Column(name = "tourist_name")
+    @Column(name = "tourist_date")
     private String travelDate;
 
     @Column(name = "id_tourist")
     private Integer idTourist;
 
     @Column(name = "id_hotel")
-    private String idHotel;
+    private Integer idHotel;
 
     @Column(name = "id_tour")
-    private String idTour;
+    private Integer idTour;
 
     public TouristDestination(){}
 
-    public TouristDestination(String travelDate, Integer idTourist, String idHotel, String idTour) {
+    public TouristDestination(String travelDate, Integer idTourist, Integer idHotel, Integer idTour) {
         this(-1,travelDate,idTourist,idHotel,idTour);
     }
 
     public TouristDestination(Integer idTouristDestination, String travelDate,
-                              Integer idTourist, String idHotel, String idTour) {
+                              Integer idTourist, Integer idHotel, Integer idTour) {
         this.idTouristDestination = idTouristDestination;
         this.travelDate = travelDate;
         this.idTourist = idTourist;
@@ -48,37 +48,6 @@ public class TouristDestination {
         this.idTouristDestination = idTouristDestination;
     }
 
-    public String getTravelDate() {
-        return travelDate;
-    }
-
-    public void setTravelDate(String travelDate) {
-        this.travelDate = travelDate;
-    }
-
-    public Integer getIdTourist() {
-        return idTourist;
-    }
-
-    public void setIdTourist(Integer idTourist) {
-        this.idTourist = idTourist;
-    }
-
-    public String getIdHotel() {
-        return idHotel;
-    }
-
-    public void setIdHotel(String idHotel) {
-        this.idHotel = idHotel;
-    }
-
-    public String getIdTour() {
-        return idTour;
-    }
-
-    public void setIdTour(String idTour) {
-        this.idTour = idTour;
-    }
 
     @Override
     public String toString() {

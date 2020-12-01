@@ -4,7 +4,7 @@ package ua.iot.tfk.model.entity;
 import ua.iot.tfk.model.annotation.Column;
 import ua.iot.tfk.model.annotation.PrimaryKey;
 import ua.iot.tfk.model.annotation.Table;
-import java.sql.Timestamp;
+
 
 @Table(name = "start_next_arrival")
 public class StartNextArrival {
@@ -14,18 +14,18 @@ public class StartNextArrival {
   private Integer idStartNextArrival;
 
   @Column(name = "start_next_arrival_date")
-  private Timestamp startNextArrivalDate;
+  private String startNextArrivalDate;
 
   @Column(name = "id_tour")
   private Integer idTour;
 
   public StartNextArrival() { }
 
-  public StartNextArrival(Timestamp startNextArrivalDate, Integer idTour) {
+  public StartNextArrival(String startNextArrivalDate, Integer idTour) {
     this(-1,startNextArrivalDate,idTour);
   }
 
-  public StartNextArrival(Integer idStartNextArrival, Timestamp startNextArrivalDate, Integer idTour) {
+  public StartNextArrival(Integer idStartNextArrival, String startNextArrivalDate, Integer idTour) {
     this.idStartNextArrival = idStartNextArrival;
     this.startNextArrivalDate = startNextArrivalDate;
     this.idTour = idTour;
@@ -39,11 +39,11 @@ public class StartNextArrival {
     this.idStartNextArrival = idStartNextArrival;
   }
 
-  public Timestamp getStartNextArrivalDate() {
+  public String getStartNextArrivalDate() {
     return startNextArrivalDate;
   }
 
-  public void setStartNextArrivalDate(Timestamp startNextArrivalDate) {
+  public void setStartNextArrivalDate(String startNextArrivalDate) {
     this.startNextArrivalDate = startNextArrivalDate;
   }
 
