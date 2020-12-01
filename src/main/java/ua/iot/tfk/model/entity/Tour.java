@@ -130,6 +130,6 @@ public class Tour {
                 ", idPedestrian=" + idPedestrian +
                 ", idBus=" + idBus +
                 ", idCruise=" + idCruise +
-                '}';
+                '}' + "\n";
     }
 }

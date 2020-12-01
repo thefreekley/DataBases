@@ -48,6 +48,6 @@ public class StoppingPoint {
         return "StoppingPoint{" +
                 "id=" + idStoppingPoint +
                 ", stoppingPointLocation='" + stoppingPointLocation + '\'' +
-                '}';
+                '}' + "\n";
     }
 }

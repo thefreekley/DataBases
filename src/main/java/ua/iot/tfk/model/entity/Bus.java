@@ -51,7 +51,7 @@ public class Bus {
         return "Bus{" +
                 "id=" + idBus +
                 ", busName='" + busName + '\'' +
-                '}';
+                '}' + "\n";
     }
 
 }

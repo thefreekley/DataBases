@@ -49,7 +49,7 @@ public class Pedestrian {
         return "Pedestrian{" +
                 "id=" + idPedestrian +
                 ", distanceKM='" + distanceKM + '\'' +
-                '}';
+                '}' + "\n";
     }
 
 }

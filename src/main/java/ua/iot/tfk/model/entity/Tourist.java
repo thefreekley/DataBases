@@ -74,7 +74,7 @@ public class Tourist {
                 ", touristName='" + touristName + '\'' +
                 ", touristAge=" + touristAge +
                 ", touristNumPhone='" + touristNumPhone + '\'' +
-                '}';
+                '}' + "\n";
     }
 
 }

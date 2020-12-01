@@ -49,7 +49,7 @@ public class Cruise {
         return "Cruise{" +
                 "id=" + idCruise +
                 ", cruiseLinerName='" + cruiseLinerName + '\'' +
-                '}';
+                '}' + "\n";
     }
 
 }

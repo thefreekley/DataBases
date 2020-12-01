@@ -78,7 +78,7 @@ public class Guide {
                 ", guideDateWork=" + guideDateWork +
                 ", guideNumPhone=" + guideNumPhone +
                 ", guideName='" + guideName + '\'' +
-                '}';
+                '}' + "\n";
     }
 
 }

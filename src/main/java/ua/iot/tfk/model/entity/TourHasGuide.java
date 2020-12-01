@@ -30,6 +30,6 @@ public class TourHasGuide {
         return "TourHasGuide{" +
                 "idTour=" + idTour +
                 ", idGuide=" + idGuide +
-                '}';
+                '}' + "\n";
     }
 }

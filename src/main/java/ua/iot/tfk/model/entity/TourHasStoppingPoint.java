@@ -46,6 +46,6 @@ public class TourHasStoppingPoint {
         return "TourHasStoppingPoint{" +
                 "idTour=" + idTour +
                 ", idStoppingPoint=" + idStoppingPoint +
-                '}';
+                '}' + "\n";
     }
 }

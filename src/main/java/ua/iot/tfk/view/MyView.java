@@ -182,142 +182,180 @@ public class MyView {
         methodsMenu.put("60", this::updateTouristDestination);
     }
 
-
     private void getAllBuses() throws SQLException {
+        System.out.println("___________________GET ALL___________________");
         System.out.println("\nBuses:\n");
         System.out.println(busController.getAll());
+        System.out.println("______________________________________________");
     }
 
     private void getBusById() throws SQLException {
+        System.out.println("___________________GET BY ID___________________");
         System.out.println("\nEnter ID for bus\n");
         int id = INPUT.nextInt();
         System.out.println(busController.getBy(id));
+        System.out.println("________________________________________________");
     }
 
     private void deleteBus() throws SQLException {
+        System.out.println("___________________DELETE___________________");
         System.out.println("\nEnter ID for an bus you want to delete\n");
         int id = INPUT.nextInt();
         System.out.println(busController.delete(id));
+        System.out.println("________________________________________________");
     }
 
     private void createBus() throws SQLException {
+        System.out.println("___________________CREATE___________________");
         System.out.println("\nEnter busName");
         String busName = INPUT.next();
         Bus bus = new Bus(busName);
         System.out.println(busController.create(bus));
-    }
 
+        System.out.println("________________________________________________");
+    }
     private void updateBus() throws SQLException {
+        System.out.println("___________________UPDATE___________________");
         System.out.println("\nEnter id");
         Integer id = INPUT.nextInt();
         System.out.println("\nEnter busName");
         String busName = INPUT.next();
-        Bus updatedBus = new Bus(busName);
+        Bus updatedBus = new Bus(id,busName);
         System.out.println(busController.update(updatedBus));
+        System.out.println("________________________________________________");
     }
 
 
     private void getAllCities() throws SQLException {
+        System.out.println("___________________GET ALL___________________");
         System.out.println("\nCities:\n");
         System.out.println(cityController.getAll());
+        System.out.println("______________________________________________");
     }
 
     private void getCityById() throws SQLException {
+        System.out.println("___________________GET BY ID___________________");
         System.out.println("\nEnter ID for city\n");
         int id = INPUT.nextInt();
         System.out.println(cityController.getBy(id));
+        System.out.println("________________________________________________");
     }
 
     private void deleteCity() throws SQLException {
+        System.out.println("___________________DELETE___________________");
         System.out.println("\nEnter ID for an city you want to delete\n");
         int id = INPUT.nextInt();
         System.out.println(cityController.delete(id));
+        System.out.println("________________________________________________");
     }
 
     private void createCity() throws SQLException {
+        System.out.println("___________________CREATE___________________");
         System.out.println("\nEnter cityName");
         String cityName = INPUT.next();
         System.out.println("\nEnter landName");
         String landName = INPUT.next();
-        City city = new City(cityName, landName);
+        City city = new City(cityName,landName);
         System.out.println(cityController.create(city));
-    }
 
+        System.out.println("________________________________________________");
+    }
     private void updateCity() throws SQLException {
+        System.out.println("___________________UPDATE___________________");
         System.out.println("\nEnter id");
         Integer id = INPUT.nextInt();
         System.out.println("\nEnter cityName");
         String cityName = INPUT.next();
         System.out.println("\nEnter landName");
         String landName = INPUT.next();
-        City updatedCity = new City(cityName, landName);
+        City updatedCity = new City(id,cityName,landName);
         System.out.println(cityController.update(updatedCity));
+        System.out.println("________________________________________________");
     }
 
 
     private void getAllCruises() throws SQLException {
+        System.out.println("___________________GET ALL___________________");
         System.out.println("\nCruises:\n");
         System.out.println(cruiseController.getAll());
+        System.out.println("______________________________________________");
     }
 
     private void getCruiseById() throws SQLException {
+        System.out.println("___________________GET BY ID___________________");
         System.out.println("\nEnter ID for cruise\n");
         int id = INPUT.nextInt();
         System.out.println(cruiseController.getBy(id));
+        System.out.println("________________________________________________");
     }
 
     private void deleteCruise() throws SQLException {
+        System.out.println("___________________DELETE___________________");
         System.out.println("\nEnter ID for an cruise you want to delete\n");
         int id = INPUT.nextInt();
         System.out.println(cruiseController.delete(id));
+        System.out.println("________________________________________________");
     }
 
     private void createCruise() throws SQLException {
+        System.out.println("___________________CREATE___________________");
         System.out.println("\nEnter cruiseLinerName");
         String cruiseLinerName = INPUT.next();
         Cruise cruise = new Cruise(cruiseLinerName);
         System.out.println(cruiseController.create(cruise));
-    }
 
+        System.out.println("________________________________________________");
+    }
     private void updateCruise() throws SQLException {
+        System.out.println("___________________UPDATE___________________");
         System.out.println("\nEnter id");
         Integer id = INPUT.nextInt();
         System.out.println("\nEnter cruiseLinerName");
         String cruiseLinerName = INPUT.next();
-        Cruise updatedCruise = new Cruise(cruiseLinerName);
+        Cruise updatedCruise = new Cruise(id,cruiseLinerName);
         System.out.println(cruiseController.update(updatedCruise));
+        System.out.println("________________________________________________");
     }
 
 
     private void getAllGuides() throws SQLException {
+        System.out.println("___________________GET ALL___________________");
         System.out.println("\nGuides:\n");
         System.out.println(guideController.getAll());
+        System.out.println("______________________________________________");
     }
 
     private void getGuideById() throws SQLException {
+        System.out.println("___________________GET BY ID___________________");
         System.out.println("\nEnter ID for guide\n");
         int id = INPUT.nextInt();
         System.out.println(guideController.getBy(id));
+        System.out.println("________________________________________________");
     }
 
     private void deleteGuide() throws SQLException {
+        System.out.println("___________________DELETE___________________");
         System.out.println("\nEnter ID for an guide you want to delete\n");
         int id = INPUT.nextInt();
         System.out.println(guideController.delete(id));
+        System.out.println("________________________________________________");
     }
 
     private void createGuide() throws SQLException {
+        System.out.println("___________________CREATE___________________");
         System.out.println("\nEnter guideName");
         String guideName = INPUT.next();
         System.out.println("\nEnter guideDateWork");
         String guideDateWork = INPUT.next();
         System.out.println("\nEnter guideNumPhone");
         String guideNumPhone = INPUT.next();
-        Guide guide = new Guide(guideName, guideDateWork, guideNumPhone);
+        Guide guide = new Guide(guideName,guideDateWork,guideNumPhone);
         System.out.println(guideController.create(guide));
-    }
 
+        System.out.println("________________________________________________");
+    }
     private void updateGuide() throws SQLException {
+        System.out.println("___________________UPDATE___________________");
         System.out.println("\nEnter id");
         Integer id = INPUT.nextInt();
         System.out.println("\nEnter guideName");
@@ -326,29 +364,37 @@ public class MyView {
         String guideDateWork = INPUT.next();
         System.out.println("\nEnter guideNumPhone");
         String guideNumPhone = INPUT.next();
-        Guide updatedGuide = new Guide(guideName, guideDateWork, guideNumPhone);
+        Guide updatedGuide = new Guide(id,guideName,guideDateWork,guideNumPhone);
         System.out.println(guideController.update(updatedGuide));
+        System.out.println("________________________________________________");
     }
 
 
     private void getAllHotels() throws SQLException {
+        System.out.println("___________________GET ALL___________________");
         System.out.println("\nHotels:\n");
         System.out.println(hotelController.getAll());
+        System.out.println("______________________________________________");
     }
 
     private void getHotelById() throws SQLException {
+        System.out.println("___________________GET BY ID___________________");
         System.out.println("\nEnter ID for hotel\n");
         int id = INPUT.nextInt();
         System.out.println(hotelController.getBy(id));
+        System.out.println("________________________________________________");
     }
 
     private void deleteHotel() throws SQLException {
+        System.out.println("___________________DELETE___________________");
         System.out.println("\nEnter ID for an hotel you want to delete\n");
         int id = INPUT.nextInt();
         System.out.println(hotelController.delete(id));
+        System.out.println("________________________________________________");
     }
 
     private void createHotel() throws SQLException {
+        System.out.println("___________________CREATE___________________");
         System.out.println("\nEnter hotelName");
         String hotelName = INPUT.next();
         System.out.println("\nEnter payOnDay");
@@ -357,11 +403,13 @@ public class MyView {
         Integer hotelClass = INPUT.nextInt();
         System.out.println("\nEnter idCity");
         Integer idCity = INPUT.nextInt();
-        Hotel hotel = new Hotel(hotelName, payOnDay, hotelClass, idCity);
+        Hotel hotel = new Hotel(hotelName,payOnDay,hotelClass,idCity);
         System.out.println(hotelController.create(hotel));
-    }
 
+        System.out.println("________________________________________________");
+    }
     private void updateHotel() throws SQLException {
+        System.out.println("___________________UPDATE___________________");
         System.out.println("\nEnter id");
         Integer id = INPUT.nextInt();
         System.out.println("\nEnter hotelName");
@@ -372,169 +420,217 @@ public class MyView {
         Integer hotelClass = INPUT.nextInt();
         System.out.println("\nEnter idCity");
         Integer idCity = INPUT.nextInt();
-        Hotel updatedHotel = new Hotel(hotelName, payOnDay, hotelClass, idCity);
+        Hotel updatedHotel = new Hotel(id,hotelName,payOnDay,hotelClass,idCity);
         System.out.println(hotelController.update(updatedHotel));
+        System.out.println("________________________________________________");
     }
 
 
     private void getAllLands() throws SQLException {
+        System.out.println("___________________GET ALL___________________");
         System.out.println("\nLands:\n");
         System.out.println(landController.getAll());
+        System.out.println("______________________________________________");
     }
 
     private void getLandById() throws SQLException {
+        System.out.println("___________________GET BY ID___________________");
         System.out.println("\nEnter ID for land\n");
         int id = INPUT.nextInt();
         System.out.println(landController.getBy(id));
+        System.out.println("________________________________________________");
     }
 
     private void deleteLand() throws SQLException {
+        System.out.println("___________________DELETE___________________");
         System.out.println("\nEnter ID for an land you want to delete\n");
         int id = INPUT.nextInt();
         System.out.println(landController.delete(id));
+        System.out.println("________________________________________________");
     }
 
     private void createLand() throws SQLException {
+        System.out.println("___________________CREATE___________________");
         System.out.println("\nEnter landName");
         String landName = INPUT.next();
         Land land = new Land(landName);
         System.out.println(landController.create(land));
-    }
 
+        System.out.println("________________________________________________");
+    }
     private void updateLand() throws SQLException {
+        System.out.println("___________________UPDATE___________________");
         System.out.println("\nEnter id");
         Integer id = INPUT.nextInt();
         System.out.println("\nEnter landName");
         String landName = INPUT.next();
         Land updatedLand = new Land(landName);
         System.out.println(landController.update(updatedLand));
+        System.out.println("________________________________________________");
     }
 
 
     private void getAllPedestrians() throws SQLException {
+        System.out.println("___________________GET ALL___________________");
         System.out.println("\nPedestrians:\n");
         System.out.println(pedestrianController.getAll());
+        System.out.println("______________________________________________");
     }
 
     private void getPedestrianById() throws SQLException {
+        System.out.println("___________________GET BY ID___________________");
         System.out.println("\nEnter ID for pedestrian\n");
         int id = INPUT.nextInt();
         System.out.println(pedestrianController.getBy(id));
+        System.out.println("________________________________________________");
     }
 
     private void deletePedestrian() throws SQLException {
+        System.out.println("___________________DELETE___________________");
         System.out.println("\nEnter ID for an pedestrian you want to delete\n");
         int id = INPUT.nextInt();
         System.out.println(pedestrianController.delete(id));
+        System.out.println("________________________________________________");
     }
 
     private void createPedestrian() throws SQLException {
+        System.out.println("___________________CREATE___________________");
         System.out.println("\nEnter distanceKM");
         Integer distanceKM = INPUT.nextInt();
         Pedestrian pedestrian = new Pedestrian(distanceKM);
         System.out.println(pedestrianController.create(pedestrian));
-    }
 
+        System.out.println("________________________________________________");
+    }
     private void updatePedestrian() throws SQLException {
+        System.out.println("___________________UPDATE___________________");
         System.out.println("\nEnter id");
         Integer id = INPUT.nextInt();
         System.out.println("\nEnter distanceKM");
         Integer distanceKM = INPUT.nextInt();
-        Pedestrian updatedPedestrian = new Pedestrian(distanceKM);
+        Pedestrian updatedPedestrian = new Pedestrian(id,distanceKM);
         System.out.println(pedestrianController.update(updatedPedestrian));
+        System.out.println("________________________________________________");
     }
 
 
     private void getAllStartNextArrivals() throws SQLException {
+        System.out.println("___________________GET ALL___________________");
         System.out.println("\nStart Next Arrivals:\n");
         System.out.println(startNextArrivalController.getAll());
+        System.out.println("______________________________________________");
     }
 
     private void getStartNextArrivalById() throws SQLException {
+        System.out.println("___________________GET BY ID___________________");
         System.out.println("\nEnter ID for start next arrival\n");
         int id = INPUT.nextInt();
         System.out.println(startNextArrivalController.getBy(id));
+        System.out.println("________________________________________________");
     }
 
     private void deleteStartNextArrival() throws SQLException {
+        System.out.println("___________________DELETE___________________");
         System.out.println("\nEnter ID for an start next arrival you want to delete\n");
         int id = INPUT.nextInt();
         System.out.println(startNextArrivalController.delete(id));
+        System.out.println("________________________________________________");
     }
 
     private void createStartNextArrival() throws SQLException {
+        System.out.println("___________________CREATE___________________");
         System.out.println("\nEnter startNextArrivalDate");
         String startNextArrivalDate = INPUT.next();
         System.out.println("\nEnter idTour");
         Integer idTour = INPUT.nextInt();
-        StartNextArrival startNextArrival = new StartNextArrival(startNextArrivalDate, idTour);
+        StartNextArrival startNextArrival = new StartNextArrival(startNextArrivalDate,idTour);
         System.out.println(startNextArrivalController.create(startNextArrival));
-    }
 
+        System.out.println("________________________________________________");
+    }
     private void updateStartNextArrival() throws SQLException {
+        System.out.println("___________________UPDATE___________________");
         System.out.println("\nEnter id");
         Integer id = INPUT.nextInt();
         System.out.println("\nEnter startNextArrivalDate");
         String startNextArrivalDate = INPUT.next();
         System.out.println("\nEnter idTour");
         Integer idTour = INPUT.nextInt();
-        StartNextArrival updatedStartNextArrival = new StartNextArrival(startNextArrivalDate, idTour);
+        StartNextArrival updatedStartNextArrival = new StartNextArrival(id,startNextArrivalDate,idTour);
         System.out.println(startNextArrivalController.update(updatedStartNextArrival));
+        System.out.println("________________________________________________");
     }
 
 
     private void getAllStoppingPoints() throws SQLException {
+        System.out.println("___________________GET ALL___________________");
         System.out.println("\nStopping Points:\n");
         System.out.println(stoppingPointController.getAll());
+        System.out.println("______________________________________________");
     }
 
     private void getStoppingPointById() throws SQLException {
+        System.out.println("___________________GET BY ID___________________");
         System.out.println("\nEnter ID for stopping point\n");
         int id = INPUT.nextInt();
         System.out.println(stoppingPointController.getBy(id));
+        System.out.println("________________________________________________");
     }
 
     private void deleteStoppingPoint() throws SQLException {
+        System.out.println("___________________DELETE___________________");
         System.out.println("\nEnter ID for an stopping point you want to delete\n");
         int id = INPUT.nextInt();
         System.out.println(stoppingPointController.delete(id));
+        System.out.println("________________________________________________");
     }
 
     private void createStoppingPoint() throws SQLException {
+        System.out.println("___________________CREATE___________________");
         System.out.println("\nEnter stoppingPointLocation");
         String stoppingPointLocation = INPUT.next();
         StoppingPoint stoppingPoint = new StoppingPoint(stoppingPointLocation);
         System.out.println(stoppingPointController.create(stoppingPoint));
-    }
 
+        System.out.println("________________________________________________");
+    }
     private void updateStoppingPoint() throws SQLException {
+        System.out.println("___________________UPDATE___________________");
         System.out.println("\nEnter id");
         Integer id = INPUT.nextInt();
         System.out.println("\nEnter stoppingPointLocation");
         String stoppingPointLocation = INPUT.next();
-        StoppingPoint updatedStoppingPoint = new StoppingPoint(stoppingPointLocation);
+        StoppingPoint updatedStoppingPoint = new StoppingPoint(id,stoppingPointLocation);
         System.out.println(stoppingPointController.update(updatedStoppingPoint));
+        System.out.println("________________________________________________");
     }
 
 
     private void getAllTours() throws SQLException {
+        System.out.println("___________________GET ALL___________________");
         System.out.println("\nTours:\n");
         System.out.println(tourController.getAll());
+        System.out.println("______________________________________________");
     }
 
     private void getTourById() throws SQLException {
+        System.out.println("___________________GET BY ID___________________");
         System.out.println("\nEnter ID for tour\n");
         int id = INPUT.nextInt();
         System.out.println(tourController.getBy(id));
+        System.out.println("________________________________________________");
     }
 
     private void deleteTour() throws SQLException {
+        System.out.println("___________________DELETE___________________");
         System.out.println("\nEnter ID for an tour you want to delete\n");
         int id = INPUT.nextInt();
         System.out.println(tourController.delete(id));
+        System.out.println("________________________________________________");
     }
 
     private void createTour() throws SQLException {
+        System.out.println("___________________CREATE___________________");
         System.out.println("\nEnter tourName");
         String tourName = INPUT.next();
         System.out.println("\nEnter description");
@@ -549,11 +645,13 @@ public class MyView {
         Integer idBus = INPUT.nextInt();
         System.out.println("\nEnter idCruise");
         Integer idCruise = INPUT.nextInt();
-        Tour tour = new Tour(tourName, description, duration, priceOnePerson, idPedestrian, idBus, idCruise);
+        Tour tour = new Tour(tourName,description,duration,priceOnePerson,idPedestrian,idBus,idCruise);
         System.out.println(tourController.create(tour));
-    }
 
+        System.out.println("________________________________________________");
+    }
     private void updateTour() throws SQLException {
+        System.out.println("___________________UPDATE___________________");
         System.out.println("\nEnter id");
         Integer id = INPUT.nextInt();
         System.out.println("\nEnter tourName");
@@ -570,40 +668,50 @@ public class MyView {
         Integer idBus = INPUT.nextInt();
         System.out.println("\nEnter idCruise");
         Integer idCruise = INPUT.nextInt();
-        Tour updatedTour = new Tour(tourName, description, duration, priceOnePerson, idPedestrian, idBus, idCruise);
+        Tour updatedTour = new Tour(id,tourName,description,duration,priceOnePerson,idPedestrian,idBus,idCruise);
         System.out.println(tourController.update(updatedTour));
+        System.out.println("________________________________________________");
     }
 
 
     private void getAllTourists() throws SQLException {
+        System.out.println("___________________GET ALL___________________");
         System.out.println("\nTourists:\n");
         System.out.println(touristController.getAll());
+        System.out.println("______________________________________________");
     }
 
     private void getTouristById() throws SQLException {
+        System.out.println("___________________GET BY ID___________________");
         System.out.println("\nEnter ID for tourist\n");
         int id = INPUT.nextInt();
         System.out.println(touristController.getBy(id));
+        System.out.println("________________________________________________");
     }
 
     private void deleteTourist() throws SQLException {
+        System.out.println("___________________DELETE___________________");
         System.out.println("\nEnter ID for an tourist you want to delete\n");
         int id = INPUT.nextInt();
         System.out.println(touristController.delete(id));
+        System.out.println("________________________________________________");
     }
 
     private void createTourist() throws SQLException {
+        System.out.println("___________________CREATE___________________");
         System.out.println("\nEnter touristName");
         String touristName = INPUT.next();
         System.out.println("\nEnter touristAge");
         Integer touristAge = INPUT.nextInt();
         System.out.println("\nEnter touristNumPhone");
         String touristNumPhone = INPUT.next();
-        Tourist tourist = new Tourist(touristName, touristAge, touristNumPhone);
+        Tourist tourist = new Tourist(touristName,touristAge,touristNumPhone);
         System.out.println(touristController.create(tourist));
-    }
 
+        System.out.println("________________________________________________");
+    }
     private void updateTourist() throws SQLException {
+        System.out.println("___________________UPDATE___________________");
         System.out.println("\nEnter id");
         Integer id = INPUT.nextInt();
         System.out.println("\nEnter touristName");
@@ -612,29 +720,37 @@ public class MyView {
         Integer touristAge = INPUT.nextInt();
         System.out.println("\nEnter touristNumPhone");
         String touristNumPhone = INPUT.next();
-        Tourist updatedTourist = new Tourist(touristName, touristAge, touristNumPhone);
+        Tourist updatedTourist = new Tourist(id,touristName,touristAge,touristNumPhone);
         System.out.println(touristController.update(updatedTourist));
+        System.out.println("________________________________________________");
     }
 
 
     private void getAllTouristDestinations() throws SQLException {
+        System.out.println("___________________GET ALL___________________");
         System.out.println("\nTourist Destinations:\n");
         System.out.println(touristDestinationController.getAll());
+        System.out.println("______________________________________________");
     }
 
     private void getTouristDestinationById() throws SQLException {
+        System.out.println("___________________GET BY ID___________________");
         System.out.println("\nEnter ID for tourist destination\n");
         int id = INPUT.nextInt();
         System.out.println(touristDestinationController.getBy(id));
+        System.out.println("________________________________________________");
     }
 
     private void deleteTouristDestination() throws SQLException {
+        System.out.println("___________________DELETE___________________");
         System.out.println("\nEnter ID for an tourist destination you want to delete\n");
         int id = INPUT.nextInt();
         System.out.println(touristDestinationController.delete(id));
+        System.out.println("________________________________________________");
     }
 
     private void createTouristDestination() throws SQLException {
+        System.out.println("___________________CREATE___________________");
         System.out.println("\nEnter travelDate");
         String travelDate = INPUT.next();
         System.out.println("\nEnter idTourist");
@@ -643,11 +759,13 @@ public class MyView {
         Integer idHotel = INPUT.nextInt();
         System.out.println("\nEnter idTour");
         Integer idTour = INPUT.nextInt();
-        TouristDestination touristDestination = new TouristDestination(travelDate, idTourist, idHotel, idTour);
+        TouristDestination touristDestination = new TouristDestination(travelDate,idTourist,idHotel,idTour);
         System.out.println(touristDestinationController.create(touristDestination));
-    }
 
+        System.out.println("________________________________________________");
+    }
     private void updateTouristDestination() throws SQLException {
+        System.out.println("___________________UPDATE___________________");
         System.out.println("\nEnter id");
         Integer id = INPUT.nextInt();
         System.out.println("\nEnter travelDate");
@@ -658,9 +776,13 @@ public class MyView {
         Integer idHotel = INPUT.nextInt();
         System.out.println("\nEnter idTour");
         Integer idTour = INPUT.nextInt();
-        TouristDestination updatedTouristDestination = new TouristDestination(travelDate, idTourist, idHotel, idTour);
+        TouristDestination updatedTouristDestination = new TouristDestination(id,travelDate,idTourist,idHotel,idTour);
         System.out.println(touristDestinationController.update(updatedTouristDestination));
+        System.out.println("________________________________________________");
     }
+
+
+
 
 
     private void showMenu() {

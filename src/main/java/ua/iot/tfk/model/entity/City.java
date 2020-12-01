@@ -63,7 +63,7 @@ public class City {
                 "id=" + idCity +
                 ", cityName='" + cityName  +
                 ", landName='" + landName + '\'' +
-                '}';
+                '}' + "\n";
     }
 
 }

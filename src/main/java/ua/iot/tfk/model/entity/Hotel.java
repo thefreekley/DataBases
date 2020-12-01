@@ -87,7 +87,7 @@ public class Hotel {
                 ", payOnDay=" + payOnDay +
                 ", hotelClass=" + hotelClass +
                 ", idCity=" + idCity +
-                '}';
+                '}' + "\n";
     }
 
 }

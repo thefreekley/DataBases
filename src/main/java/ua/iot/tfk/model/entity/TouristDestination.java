@@ -13,7 +13,7 @@ public class TouristDestination {
     @Column(name = "id_tourist_destination")
     private Integer idTouristDestination;
 
-    @Column(name = "tourist_date")
+    @Column(name = "travel_date")
     private String travelDate;
 
     @Column(name = "id_tourist")
@@ -49,6 +49,38 @@ public class TouristDestination {
     }
 
 
+    public String getTravelDate() {
+        return travelDate;
+    }
+
+    public void setTravelDate(String travelDate) {
+        this.travelDate = travelDate;
+    }
+
+    public Integer getIdTourist() {
+        return idTourist;
+    }
+
+    public void setIdTourist(Integer idTourist) {
+        this.idTourist = idTourist;
+    }
+
+    public Integer getIdHotel() {
+        return idHotel;
+    }
+
+    public void setIdHotel(Integer idHotel) {
+        this.idHotel = idHotel;
+    }
+
+    public Integer getIdTour() {
+        return idTour;
+    }
+
+    public void setIdTour(Integer idTour) {
+        this.idTour = idTour;
+    }
+
     @Override
     public String toString() {
         return "TouristDestination{" +
@@ -57,6 +89,6 @@ public class TouristDestination {
                 ", idTourist=" + idTourist +
                 ", idHotel='" + idHotel + '\'' +
                 ", idTour='" + idTour + '\'' +
-                '}';
+                '}'+ "\n";
     }
 }

@@ -10,7 +10,7 @@ import ua.iot.tfk.model.annotation.Table;
 public class StartNextArrival {
 
   @PrimaryKey
-  @Column(name = "id_stopping_point")
+  @Column(name = "id_start_next_arrival")
   private Integer idStartNextArrival;
 
   @Column(name = "start_next_arrival_date")
@@ -61,7 +61,7 @@ public class StartNextArrival {
             "idStartNextArrival=" + idStartNextArrival +
             ", startNextArrivalDate=" + startNextArrivalDate +
             ", idTour=" + idTour +
-            '}';
+            '}' + "\n";
   }
 }
 

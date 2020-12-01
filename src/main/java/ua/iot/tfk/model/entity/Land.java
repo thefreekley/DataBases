@@ -32,7 +32,7 @@ public class Land {
     public String toString() {
         return "Land{" +
                 "landName=" + landName +
-                '}';
+                '}' + "\n";
     }
 
 }
